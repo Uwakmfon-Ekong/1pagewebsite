@@ -25,7 +25,7 @@ nav {
 }
 section {
   height: 500px;
-  background-image: url(WhatsApp\ Image\ 2023-06-29\ at\ 22.38.15.jpg);
+  background-image: url(images/WhatsApp\ Image\ 2023-06-29\ at\ 22.38.15.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(64, 105, 171);
@@ -254,4 +254,217 @@ main button {
   display: flex;
   justify-content: center;
   color: white;
+}
+/* media queries */
+@media screen and (max-width: 600px) {
+  .container {
+    background: lightgreen;
+    width: 100%;
+    height: 100vh;
+  }
+  nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: static;
+  justify-content: space-between;
+  padding: 1rem;
+}
+section {
+  height: 400px;
+  background-image: url(images/WhatsApp\ Image\ 2023-06-29\ at\ 22.38.15.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(64, 105, 171);
+  background-blend-mode: overlay;
+  color: white;
+}
+nav .logo {
+  font-size: 20px;
+  font-weight: 0;
+  padding-left: 2rem;
+}
+nav ul li {
+  list-style: none;
+  padding: 0.2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+nav ul li a:hover{
+  color: black;
+  font-size: 13px;
+  transition: all ease-in 0.3s;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.mini-section {
+  text-align: center;
+}
+.mini-section h1 {
+  padding-top: 6rem;
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+}
+.mini-section p {
+  padding: 8%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.mini-section button {
+  padding: 12px 17px;
+  border: none;
+  border-radius: 1rem;
+  color: rgb(64, 105, 171);
+}
+.mini-section button:hover{
+  background: rgb(64, 105, 171);
+  color: white;
+  transition: all ease-in 0.3s;
+}
+
+.loadingCircle {
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 9rem;
+  margin-top: 3rem;
+}
+.loadingCircle div {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: white;
+}
+/* main */
+main {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  background: white;
+}
+main h1 {
+  padding-top: 1.5rem;
+  color: rgb(64, 105, 171);
+  height: 25%;
+}
+.line {
+  border: 2px solid rgb(64, 105, 171);
+  width: 30px;
+  border-radius: 10px;
+  margin-left: 9rem;
+  margin-bottom: 1.5rem;
+}
+main p {
+  padding: 0 1.5rem;
+  font-size: 13px;
+  height: 55%;
+}
+main button {
+  border: 2px solid rgb(64, 105, 171);
+  border-radius: 15px;
+  background: white;
+  padding: 5px 10px;
+  height: 10%;
+}
+main button:hover{
+  background: rgb(64, 105, 171);
+  color: white;
+  transition: all ease-in 0.3s;
+}
+/* boxes */
+.boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 700px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+.boxes p {
+  padding: 1rem;
+}
+.our-story {
+  width: 100%;
+  background: rgb(64, 105, 171);
+  padding: 1.5rem;
+  height: 33.333%;
+}
+.our-mission {
+  background: black;
+  width: 100%;
+  padding: 1.5rem;
+  height: 33.3333%;
+}
+.our-vision {
+  background: rgb(64, 105, 171);
+  width: 100%;
+  padding: 1.5rem;
+  height: 33.3333%;
+}
+/* section 2 */
+.second-main {
+  height: 800px;
+}
+.second-main h1 {
+  text-align: center;
+  padding-top: 2rem;
+  color: rgb(64, 105, 171);
+}
+.second-main p {
+  text-align: center;
+  margin: 0 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.parentGrid {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background: white;
+}
+
+.parentGrid > div {
+  background: rgb(231, 228, 228);
+  color: rgb(64, 105, 171);
+  border-radius: 10px 10px 10px 10px;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.parentGrid div:hover{
+  height: 70px;
+  background: rgb(64, 105, 171);
+  color: white;
+  transition: all ease-in 0.3s;
+}
+.parentGrid div:hover .circle{
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+}
+.circleHolder > p {
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.circle {
+  border: 2px solid rgb(64, 105, 171);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 }
